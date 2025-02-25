@@ -71,15 +71,15 @@ def handle_start(message):
             f"""
 ```
 {vip_status}```\n"""
-            "📌 *Como usar:*"
+            "📌 *How to use:*"
             """
 ```
 /crash <TYPE> <IP/HOST:PORT> <THREADS> <MS>```\n"""
-            "💡 *Ejemplo:*"
+            "💡 *Example:*"
             """
 ```
 /crash UDP 143.92.125.230:10013 10 900```\n"""
-            "💠 ҒᏞᎬХᎪ ᏟᎻᎬᎪͲ 🇧🇩 💠"
+            "💠 ҒᏞᎬХᎪ ᏟᎻᎬᎪͲ 💠"
         ),
         reply_markup=markup,
         parse_mode="Markdown",
@@ -115,7 +115,7 @@ def handle_addvip(message):
         )
         conn.commit()
 
-    bot.reply_to(message, f"✅ Usuário {telegram_id} agregado como VIP por {days} dias.")
+    bot.reply_to(message, f"✅ User {telegram_id} Added as VIP by {days} dias.")
 
 
 @bot.message_handler(commands=["crash"])
